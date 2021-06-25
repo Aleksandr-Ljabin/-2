@@ -1,0 +1,656 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  src: local("O"), url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  src: local("O"), url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+/*мобильная версия*/
+/*хидер*/
+
+body,
+.main-trend {
+  width: 100%;
+  max-width: 767px;
+  font-family: "OpenSans-Bold";
+}
+
+.header {
+  background-image: url("../images/banner-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  padding: 220px 20px 215px;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.4;
+}
+
+.logo {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/*меню*/
+
+.header-nav{
+  display: none;
+}
+
+.list-items {
+  list-style-type: none;
+  display: flex;
+}
+
+.list-items-link {
+  padding-left: 35px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*конец меню*/
+
+.header-title {
+  font-size: 26px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  
+}
+
+/*коней хидера*/
+
+/*тренды*/
+
+.main-post,
+.aside,
+.products,
+.footer,
+.copyright {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 767px;
+}
+
+.title-main {
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.title-main:after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  opacity: 0.4;
+  background-color: #b59f5b;
+  margin: 10px auto;
+}
+
+.main-trend {
+  margin-bottom: 40px;
+}
+
+.main-trend-post {
+  margin-bottom: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  padding: 80px 15px 10px;
+  position: relative;
+}
+
+.trend-post_1 {
+  background-image: url("../images/trend1.jpg");
+}
+
+.trend-post_2 {
+  background-image: url("../images/trend2.jpg");
+}
+
+.trend-post_3 {
+  background-image: url("../images/trend3.jpg");
+}
+
+.trend-post_4 {
+  background-image: url("../images/trend4.jpg");
+}
+
+.main-trend-post:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000000;
+  opacity: 0.4;
+}
+
+.main-trend-desc {
+  border: 5px solid #927f4e;
+  padding: 25px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-trend-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.main-trend-link {
+  font-size: 14px;
+  color: #b59f5b;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.main-trend-title-link {
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+/*конец трендов*/
+
+/*посты в майне*/
+
+.main-post {
+}
+
+.post {
+  border-bottom: 4px solid #eeeeee;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.post-img {
+  margin-bottom: 10px;
+}
+
+.pic {
+  width: 100%;
+}
+
+.post-text {
+}
+
+.post-text-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.post-text-link {
+  text-transform: uppercase;
+  color: #b59f5b;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.post-text-heading {
+  margin-bottom: 20px;
+}
+
+.post-text-title {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #0f0d0e;
+  text-transform: uppercase;
+}
+.post-info {
+  margin-bottom: 20px;
+}
+.date-info {
+  font-family: OpenSans-Regular;
+  font-size: 12px;
+  color: #888888;
+  padding-right: 10px;
+}
+.author-info {
+  font-size: 12px;
+}
+.post-text-desc {
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.post-text-desc p {
+  padding-bottom: 15px;
+}
+
+/*конец постов в майне*/
+
+/*дополнительный блок Новые посты*/
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title-text::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  opacity: 0.4;
+  background-color: #b59f5b;
+  margin: 10px auto;
+}
+
+.section-title-text {
+  text-align: center;
+}
+
+.section-title-text-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.section-post {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.section-post:last-child {
+  margin-bottom: 60px;
+}
+.section-post-img {
+  padding-right: 20px;
+}
+.section-post-img-pic {
+}
+.section-post-pic {
+}
+.section-post-text {
+}
+.section-post-text-date {
+  font-family: OpenSans-Regular;
+  font-size: 12px;
+  color: ##888888;
+}
+.section-post-text-title {
+}
+.section-post-text-title-link {
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/*Конец блока новых постов*/
+
+/*Форма поиска*/
+
+.form-search {
+  display: flex;
+}
+
+.label-search {
+  flex: 1;
+}
+
+.field-search {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17px;
+  border: none;
+  background-color: #f4f7f6;
+}
+
+.button-search {
+  width: 49px;
+  height: 50px;
+  background-color: #b59f5b;
+  border: none;
+  background-image: url("../svg/search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
+
+.visually-hidden-text {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+/*Конец формы поиска*/
+
+/*Форма ввода email*/
+
+.field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: #f4f7f6;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 100%;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #b59f5b;
+  border: none;
+}
+
+/*Конец формы ввода email*/
+
+/*Теги*/
+
+.tegs-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tegs-list-item {
+  list-style-type: none;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 12px;
+  background-color: rgba(244, 243, 241, 0);
+  border: 3px solid #eeeeee;
+
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tegs-list-item-link {
+  text-decoration: none;
+  color: #0f0d0e;
+}
+
+/*Конец блока тегов*/
+
+/*Темы*/
+.theme-list-item {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.theme-list-item-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.theme-sum {
+  font-size: 12px;
+  font-weight: 700;
+  color: #b59f5b;
+  padding-left: 5px;
+  vertical-align: top;
+}
+
+/*Конец блока тем*/
+
+/*Товары*/
+
+.section {
+}
+.product {
+  margin-bottom: 25px;
+}
+
+.product-img {
+  text-align: center;
+}
+.product-pic {
+  width: 85%;
+}
+
+.product-desc {
+  margin-bottom: 25px;
+}
+
+.product-desc-container {
+  padding: 50px 20px 20px;
+  margin-top: -25px;
+  border: 3px solid #b59f5b;
+}
+
+.product-desc-title-link {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product-desc-text {
+  font-size: 15px;
+  line-height: 1.4;
+}
+.product-desc-text-link {
+  font-size: 15px;
+  color: #b59f5b;
+}
+
+.price-buy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  width: 45%;
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.new-price {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.button-buy {
+  width: 45%;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #b59f5b;
+  border: none;
+}
+
+/*Конец блока товаров*/
+
+/*Футер*/
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f4f7f6;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social-icon-list {
+  list-style-type: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.social-icon-pic {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-icon_twitter {
+  background-image: url("../svg/004-twitter.svg");
+}
+
+.social-icon_pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.social-icon_facebook {
+  background-image: url("../svg/002-facebook-logo.svg");
+}
+
+.social-icon_instagram {
+  background-image: url("../svg/005-instagram.svg");
+}
+
+.social-icon_tumblr {
+  background-image: url("../svg/003-tumblr.svg");
+}
+
+/*Конец футера*/
+
+/*Копирайт*/
+
+.copyright {
+  font-size: 12px;
+  font-weight: 700;
+  color: #999999;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/*Конец копирайта*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  body,
+  .main-trend {
+    width: 100%;
+    max-width: 1199px;
+  }
+
+  .header {
+    background-image: url("../images/banner-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    padding: 220px 80px 125px;
+  }
+
+  .header-title {
+    font-size: 40px;
+  }
+  .main-trend {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.post:last-child{
+  border: none;
+}
+
+  .main-trend-post {
+    width: 49%;
+    margin-bottom: 5px;
+  }
+
+  .main-aside-container {
+    width: 95%;
+    display: flex;
+  }
+
+  .aside {
+    flex-basis: 90%;
+  }
+
+  .tegs-list-item {
+  padding: 5px 20px;
+}
+
+
+  .product-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 50px;
+  }
+
+  .product{
+    width: 45%;
+    margin: 0;
+    padding: 0;
+  }
+  }
+
+  @media (min-width: 1200px){
+    .header-nav{
+      display: flex;
+    }
+    .header {
+    background-image: url("../images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    padding: 220px 80px 125px;
+  }
+
+
+
+  }
